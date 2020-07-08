@@ -1,0 +1,47 @@
+﻿  main.cpp
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(54,95): error C2664: “HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)”: 无法将参数 4 从“BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)”转换为“DLGPROC”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(54,78): message : 在匹配目标类型的范围内没有具有该名称的函数
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winuser.h(4991,1): message : 参见“CreateDialogParamA”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(67,14): warning C4244: “return”: 从“WPARAM”转换到“int”，可能丢失数据
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(92,102): error C2664: “HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)”: 无法将参数 4 从“BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)”转换为“DLGPROC”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(92,81): message : 在匹配目标类型的范围内没有具有该名称的函数
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winuser.h(4991,1): message : 参见“CreateDialogParamA”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(98,93): error C2664: “INT_PTR DialogBoxParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)”: 无法将参数 4 从“BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)”转换为“DLGPROC”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(98,78): message : 在匹配目标类型的范围内没有具有该名称的函数
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winuser.h(5059,1): message : 参见“DialogBoxParamA”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(397,63): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPCVOID”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(399,54): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPVOID”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(416,90): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(416,90): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(438,21): error C2039: "Eip": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(439,61): error C2039: "Eip": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(439,88): error C2660: “WriteProcessMemory”: 函数不接受 4 个参数
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\memoryapi.h(172,1): message : 参见“WriteProcessMemory”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(445,11): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(445,11): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(447,61): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPCVOID”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(461,133): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(461,133): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(463,65): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPVOID”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(465,67): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPVOID”
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(573,58): warning C4244: “=”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(588,48): error C2039: "Eax": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(589,48): error C2039: "Ebx": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(590,48): error C2039: "Ecx": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(591,48): error C2039: "Edx": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(592,48): error C2039: "Eip": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(593,48): error C2039: "Esp": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(594,48): error C2039: "Ebp": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(595,48): error C2039: "Esi": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
+E:\Visual Studio 2019\Project\reDbg\reDbg\main.cpp(596,48): error C2039: "Edi": 不是 "_CONTEXT" 的成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(3886): message : 参见“_CONTEXT”的声明
