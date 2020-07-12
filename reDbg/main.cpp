@@ -2322,13 +2322,15 @@ void _stdcall _UpdateCpu(CONTEXT stContext)
 	//更新堆栈窗口
 	ListView_GetItemText(GetDlgItem(hWnd, IDC_LIST3), 0, 0, szBuffer1, sizeof(szBuffer1));
 	dwData = strtol(szBuffer1, NULL, 16);
-	if(stContext.Esp > dwItemEsp )
-		ListView_Scroll(GetDlgItem(hWnd, IDC_LIST3), 0, (stRect.bottom - stRect.top) * (stContext.Esp - dwItemEsp) / 4);
-	else if(stContext.Esp < dwItemEsp)
-		ListView_Scroll(GetDlgItem(hWnd, IDC_LIST3), 0, (stRect.bottom - stRect.top) *  (0 -((dwItemEsp - stContext.Esp) / 4)));
+	ListView_SetHotItem(GetDlgItem(hWnd, IDC_LIST3), (stContext.Esp - dwData) / 4);							//设置热点项
+
+
+	
+	ListView_Scroll(GetDlgItem(hWnd, IDC_LIST3), 0,(0 - (stRect.bottom - stRect.top) * 0x1000));					//将esp移动到视野中
+	ListView_Scroll(GetDlgItem(hWnd, IDC_LIST3), 0, (stRect.bottom - stRect.top) * ListView_GetHotItem(GetDlgItem(hWnd, IDC_LIST3)));
 	
 	
-	ListView_SetHotItem(GetDlgItem(hWnd, IDC_LIST3), (stContext.Esp - dwData) / 4);
+	
 	dwItemEsp = stContext.Esp;
 }
 
