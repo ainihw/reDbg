@@ -49,6 +49,8 @@ Memory	stMemory;			//内存断点结构（就一个）
 Step	stStep;				//单步步过结构（就一个）
 
 
+
+
 int		flag = 0;			//不同标志意义不同
 int		flag1 = 0;			//标志是刚刚是否发生了int3断点。
 int		flag2 = 0;			//标记反汇编窗口是否被打开
@@ -146,6 +148,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	return stMsg.wParam;
 }
+
+
+
 
 
 
